@@ -1,0 +1,49 @@
+
+
+
+<h1>===========ViweBag========</h1>
+<h1>@ViewBag.test</h1>
+<h1>@ViewBag.test1</h1>
+<h1>@ViewBag.test2</h1>
+<h1>@ViewBag.test3</h1>
+<ul>
+    @foreach (var item in ViewBag.list)
+    {
+    <li> @item</li>
+    }
+</ul>
+ 
+
+<h1>======= Viwe Data ========</h1>
+<h1>@ViewData["test"]</h1>
+<h1>@ViewData["test1"]</h1>
+<h1>@ViewData["test2"]</h1>
+<h1>@ViewData["test3"]</h1>
+<ul>
+    @foreach (var item1 in (List<string>)ViewData["listdata"])
+    {
+        <li><h4> @item1</h4> </li>
+    }
+</ul>
+
+<h1>======== Temp Data ======</h1>
+<h1>@TempData["test"]</h1>
+<h1>@TempData["test1"]</h1>
+<h1>@TempData["test2"]</h1>
+<ul>
+    @foreach (var item in (List<string>)TempData["listdata"])
+    {
+        <li><h4> @item</h4> </li>
+    }
+</ul>
+
+<h1>======= Session ========</h1>
+<h1>@Session["test"]</h1>
+<h1>@Session["test2"]</h1>
+<h1>@Session["test3"]</h1>
+<ul>
+    @foreach (var item in (List<string>)Session["listdata"])
+    {
+        <li><h4> @item</h4> </li>
+    }
+</ul>
